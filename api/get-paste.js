@@ -49,7 +49,8 @@ exports.handler = async (event, _context) => {
         statusCode: 200,
         body: pasteTemplate(
           `<pre><code class="hljs ${r.data[0].data.lang}">` +
-            hljs.highlight(r.data[0].data.lang, r.data[0].data.paste).value +
+            hljs.highlight(r.data[0].data.lang, r.data[0].data.paste, true)
+              .value +
             `</code></pre>`,
           r.data[0].data.paste_id
         ),

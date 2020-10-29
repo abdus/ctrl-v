@@ -90,6 +90,7 @@
         <label>
           <span>Language</span>
           <select name="lang-name">
+            <option value="plaintext" selected>Plaintext</option>
             <option value="1c">1C</option>
             <option value="abnf">ABNF</option>
             <option value="accesslogs">Access logs</option>
@@ -201,7 +202,6 @@
             <option value="php">PHP</option>
             <option value="parser3">Parser3</option>
             <option value="perl">Perl</option>
-            <option value="plaintext" selected>Plaintext</option>
             <option value="pony">Pony</option>
             <option value="pgsql">PostgreSQL & PL/pgSQL</option>
             <option value="powershell">PowerShell</option>
@@ -266,5 +266,19 @@
       <hr />
       <textarea name="paste"></textarea>
     </form>
+    <footer
+      style="
+        padding: 1rem;
+        max-width: 60rem;
+        margin: 3rem auto auto auto;
+        text-align: center;
+      "
+    >
+      <a
+        href="https://github.com/abdus/code-bin"
+        style="color: cyan; text-decoration: none"
+        >SourceCode on GitHub</a
+      >
+    </footer>
   </body>
 </html>

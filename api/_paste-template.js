@@ -2,7 +2,7 @@ module.exports = (paste, paste_id) => `<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Paste ${paste_id}</title>
+    <title>${paste_id || 'code-bin'}</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
@@ -42,5 +42,8 @@ module.exports = (paste, paste_id) => `<!DOCTYPE html>
   </head>
   <body>
     <main>${paste}</main>
+    <footer style="padding: 1rem; max-width: 60rem; margin: 3rem auto auto auto;text-align: center;">
+      <a href="https://github.com/abdus/code-bin" style="color: cyan;text-decoration: none">SourceCode on GitHub</a>
+    </footer>
   </body>
 </html>`;
