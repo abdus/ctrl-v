@@ -2,12 +2,12 @@ const Faunadb = require("faunadb");
 const hljs = require("highlight.js");
 const pasteTemplate = require("./_paste-template.js");
 
-const fdb = new Faunadb.Client({
-  secret: process.env.FDB_SECRET,
-});
 const fdb_query = Faunadb.query;
 
 exports.handler = async (event, _context) => {
+  const fdb = new Faunadb.Client({
+    secret: process.env.FDB_SECRET,
+  });
   const HTTP_METHOD = event.httpMethod;
 
   if (HTTP_METHOD !== "GET") {
