@@ -1,0 +1,10 @@
+{
+  "name": "code-bin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "faunadb": "^3.0.1",
+    "highlight.js": "^10.3.1"
+  }
+}

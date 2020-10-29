@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        font-family: "Space Mono", monospace;
+        box-sizing: border-box;
+      }
+
+      body,
+      html {
+        margin: 0;
+      }
+
+      form {
+        max-width: 80rem;
+        width: 100%;
+        margin: 1rem auto 1rem auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0.4rem;
+        height: calc(100vh - 2rem);
+      }
+
+      form label {
+        display: inline-flex;
+        flex-wrap: wrap;
+      }
+
+      form input,
+      form select {
+        border: 0;
+        background: #ececec;
+        border-radius: 0.3rem;
+        font: inherit;
+      }
+
+      @media (max-width: 700px) {
+        form select {
+          width: 100%;
+        }
+      }
+
+      form textarea {
+        border: 1px solid #ececec;
+        border-radius: 0.4rem;
+        flex-grow: 1;
+        resize: none;
+        font: inherit;
+        outline: none;
+        padding: 0.5rem;
+      }
+
+      form label > * {
+        margin: 4px;
+        padding: 0.3rem;
+      }
+
+      hr {
+        border: 1px dashed #ececec;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/.netlify/functions/add-paste" method="POST">
+      <div>
+        <label>
+          <span>Language</span>
+          <select name="lang-name">
+            <option value="1c">1C</option>
+            <option value="abnf">ABNF</option>
+            <option value="access logs">Access logs</option>
+            <option value="ada">Ada</option>
+            <option value="arduino">Arduino</option>
+            <option value="arm assembler">ARM assembler</option>
+            <option value="avr assembler">AVR assembler</option>
+            <option value="actionscript">ActionScript</option>
+            <option value="angelscript">AngelScript</option>
+            <option value="apache">Apache</option>
+            <option value="applescript">AppleScript</option>
+            <option value="arcade">Arcade</option>
+            <option value="asciidoc">AsciiDoc</option>
+            <option value="aspectj">AspectJ</option>
+            <option value="autohotkey">AutoHotkey</option>
+            <option value="autoit">AutoIt</option>
+            <option value="awk">Awk</option>
+            <option value="bash">Bash</option>
+            <option value="basic">Basic</option>
+            <option value="bnf">BNF</option>
+            <option value="brainfuck">Brainfuck</option>
+            <option value="c#">C#</option>
+            <option value="c">C</option>
+            <option value="c++">C++</option>
+            <option value="c/al">C/AL</option>
+            <option value="cache object script">Cache Object Script</option>
+            <option value="cmake">CMake</option>
+            <option value="coq">Coq</option>
+            <option value="csp">CSP</option>
+            <option value="css">CSS</option>
+            <option value="cap’n proto">Cap’n Proto</option>
+            <option value="clojure">Clojure</option>
+            <option value="coffeescript">CoffeeScript</option>
+            <option value="crmsh">Crmsh</option>
+            <option value="crystal">Crystal</option>
+            <option value="d">D</option>
+            <option value="dns zone file">DNS Zone file</option>
+            <option value="dos">DOS</option>
+            <option value="dart">Dart</option>
+            <option value="delphi">Delphi</option>
+            <option value="diff">Diff</option>
+            <option value="django">Django</option>
+            <option value="dockerfile">Dockerfile</option>
+            <option value="dsconfig">dsconfig</option>
+            <option value="dts (device tree)">DTS (Device Tree)</option>
+            <option value="dust">Dust</option>
+            <option value="ebnf">EBNF</option>
+            <option value="elixir">Elixir</option>
+            <option value="elm">Elm</option>
+            <option value="erlang">Erlang</option>
+            <option value="excel">Excel</option>
+            <option value="f#">F#</option>
+            <option value="fix">FIX</option>
+            <option value="fortran">Fortran</option>
+            <option value="g-code">G-Code</option>
+            <option value="gams">Gams</option>
+            <option value="gauss">GAUSS</option>
+            <option value="gherkin">Gherkin</option>
+            <option value="go">Go</option>
+            <option value="golo">Golo</option>
+            <option value="gradle">Gradle</option>
+            <option value="groovy">Groovy</option>
+            <option value="html, xml">HTML, XML</option>
+            <option value="http">HTTP</option>
+            <option value="haml">Haml</option>
+            <option value="handlebars">Handlebars</option>
+            <option value="haskell">Haskell</option>
+            <option value="haxe">Haxe</option>
+            <option value="hy">Hy</option>
+            <option value="ini, toml">Ini, TOML</option>
+            <option value="inform7">Inform7</option>
+            <option value="irpf90">IRPF90</option>
+            <option value="json">JSON</option>
+            <option value="java">Java</option>
+            <option value="javascript">JavaScript</option>
+            <option value="kotlin">Kotlin</option>
+            <option value="latex">LaTeX</option>
+            <option value="leaf">Leaf</option>
+            <option value="lasso">Lasso</option>
+            <option value="less">Less</option>
+            <option value="ldif">LDIF</option>
+            <option value="lisp">Lisp</option>
+            <option value="livecode server">LiveCode Server</option>
+            <option value="livescript">LiveScript</option>
+            <option value="lua">Lua</option>
+            <option value="makefile">Makefile</option>
+            <option value="markdown">Markdown</option>
+            <option value="mathematica">Mathematica</option>
+            <option value="matlab">Matlab</option>
+            <option value="maxima">Maxima</option>
+            <option value="maya embedded language">
+              Maya Embedded Language
+            </option>
+            <option value="mercury">Mercury</option>
+            <option value="mizar">Mizar</option>
+            <option value="mojolicious">Mojolicious</option>
+            <option value="monkey">Monkey</option>
+            <option value="moonscript">Moonscript</option>
+            <option value="n1ql">N1QL</option>
+            <option value="nsis">NSIS</option>
+            <option value="nginx">Nginx</option>
+            <option value="nim">Nim</option>
+            <option value="nix">Nix</option>
+            <option value="ocaml">OCaml</option>
+            <option value="objective c">Objective C</option>
+            <option value="opengl shading language">
+              OpenGL Shading Language
+            </option>
+            <option value="openscad">OpenSCAD</option>
+            <option value="oracle rules language">Oracle Rules Language</option>
+            <option value="oxygene">Oxygene</option>
+            <option value="pf">PF</option>
+            <option value="php">PHP</option>
+            <option value="parser3">Parser3</option>
+            <option value="perl">Perl</option>
+            <option value="plaintext">Plaintext</option>
+            <option value="pony">Pony</option>
+            <option value="postgresql & pl/pgsql">PostgreSQL & PL/pgSQL</option>
+            <option value="powershell">PowerShell</option>
+            <option value="processing">Processing</option>
+            <option value="prolog">Prolog</option>
+            <option value="properties">Properties</option>
+            <option value="protocol buffers">Protocol Buffers</option>
+            <option value="puppet">Puppet</option>
+            <option value="python">Python</option>
+            <option value="python profiler results">
+              Python profiler results
+            </option>
+            <option value="python repl">Python REPL</option>
+            <option value="q">Q</option>
+            <option value="qml">QML</option>
+            <option value="r">R</option>
+            <option value="reasonml">ReasonML</option>
+            <option value="renderman rib">RenderMan RIB</option>
+            <option value="renderman rsl">RenderMan RSL</option>
+            <option value="roboconf">Roboconf</option>
+            <option value="ruby">Ruby</option>
+            <option value="rust">Rust</option>
+            <option value="sas">SAS</option>
+            <option value="scss">SCSS</option>
+            <option value="sql">SQL</option>
+            <option value="step part 21">STEP Part 21</option>
+            <option value="scala">Scala</option>
+            <option value="scheme">Scheme</option>
+            <option value="scilab">Scilab</option>
+            <option value="shell">Shell</option>
+            <option value="smali">Smali</option>
+            <option value="smalltalk">Smalltalk</option>
+            <option value="sml">SML</option>
+            <option value="stan">Stan</option>
+            <option value="stata">Stata</option>
+            <option value="stylus">Stylus</option>
+            <option value="subunit">SubUnit</option>
+            <option value="swift">Swift</option>
+            <option value="tcl">Tcl</option>
+            <option value="test anything protocol">
+              Test Anything Protocol
+            </option>
+            <option value="thrift">Thrift</option>
+            <option value="tp">TP</option>
+            <option value="twig">Twig</option>
+            <option value="typescript">TypeScript</option>
+            <option value="vb.net">VB.Net</option>
+            <option value="vbscript">VBScript</option>
+            <option value="vhdl">VHDL</option>
+            <option value="vala">Vala</option>
+            <option value="verilog">Verilog</option>
+            <option value="vim script">Vim Script</option>
+            <option value="x++">X++</option>
+            <option value="x86 assembly">x86 Assembly</option>
+            <option value="xl">XL</option>
+            <option value="xquery">XQuery</option>
+            <option value="yaml">YAML</option>
+            <option value="zephir">Zephir</option>
+          </select>
+        </label>
+        <label>
+          <button type="submit">Save</button>
+        </label>
+      </div>
+      <hr />
+      <textarea name="paste"></textarea>
+    </form>
+  </body>
+</html>
