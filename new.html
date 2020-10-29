@@ -17,6 +17,8 @@
       body,
       html {
         margin: 0;
+        background-color: #282c34;
+        color: #fff;
       }
 
       form {
@@ -37,9 +39,20 @@
       form input,
       form select {
         border: 0;
-        background: #ececec;
+        background-color: #ffffff25;
         border-radius: 0.3rem;
         font: inherit;
+        color: #fff;
+      }
+
+      button {
+        background-color: #ffffff25;
+        color: #fff;
+        border: 1px solid #ffffff25;
+      }
+
+      option {
+        background-color: #282c34;
       }
 
       @media (max-width: 700px) {
@@ -49,13 +62,15 @@
       }
 
       form textarea {
-        border: 1px solid #ececec;
+        border: 1px solid #ececec36;
         border-radius: 0.4rem;
         flex-grow: 1;
         resize: none;
         font: inherit;
         outline: none;
         padding: 0.5rem;
+        background-color: transparent;
+        color: #fff;
       }
 
       form label > * {
@@ -64,7 +79,7 @@
       }
 
       hr {
-        border: 1px dashed #ececec;
+        border: 1px dashed #ececec40;
         width: 100%;
       }
     </style>
@@ -165,9 +180,7 @@
             <option value="mathematica">Mathematica</option>
             <option value="matlab">Matlab</option>
             <option value="maxima">Maxima</option>
-            <option value="mel">
-              Maya Embedded Language
-            </option>
+            <option value="mel">Maya Embedded Language</option>
             <option value="mercury">Mercury</option>
             <option value="mizar">Mizar</option>
             <option value="mojolicious">Mojolicious</option>
@@ -180,9 +193,7 @@
             <option value="nix">Nix</option>
             <option value="ocaml">OCaml</option>
             <option value="objectivec">Objective C</option>
-            <option value="glsl">
-              OpenGL Shading Language
-            </option>
+            <option value="glsl">OpenGL Shading Language</option>
             <option value="openscad">OpenSCAD</option>
             <option value="oracle rules language">Oracle Rules Language</option>
             <option value="oxygene">Oxygene</option>
@@ -200,9 +211,7 @@
             <option value="protobuf">Protocol Buffers</option>
             <option value="puppet">Puppet</option>
             <option value="python">Python</option>
-            <option value="profile">
-              Python profiler results
-            </option>
+            <option value="profile">Python profiler results</option>
             <option value="python-repl">Python REPL</option>
             <option value="kdb">Q</option>
             <option value="qml">QML</option>
@@ -230,9 +239,7 @@
             <option value="subunit">SubUnit</option>
             <option value="swift">Swift</option>
             <option value="tcl">Tcl</option>
-            <option value="tap">
-              Test Anything Protocol
-            </option>
+            <option value="tap">Test Anything Protocol</option>
             <option value="thrift">Thrift</option>
             <option value="toml">TOML</option>
             <option value="tp">TP</option>
