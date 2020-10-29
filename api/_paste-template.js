@@ -33,6 +33,11 @@ module.exports = (paste, paste_id) => `<!DOCTYPE html>
         margin: 0;
       }
 
+      a {
+        color: cyan;
+        text-decoration: none;
+      }
+
       header {
         display: flex;
         justify-content: space-between;
