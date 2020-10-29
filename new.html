@@ -82,13 +82,32 @@
         border: 1px dashed #ececec40;
         width: 100%;
       }
+
+      a {
+        color: cyan;
+        text-decoration: none;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        max-width: 80rem;
+        margin: auto;
+        padding: 0.5rem; 
+      }
     </style>
   </head>
   <body>
+    <header>
+      <div></div>
+      <div>
+        <a href="/https://github.com/abdus/code-bin">Docs</a> &middot;
+        <a href="/new">New Paste</a>
+      </div>
+    </header>
     <form action="/.netlify/functions/add-paste" method="POST">
       <div>
         <label>
-          <span>Language</span>
           <select name="lang-name">
             <option value="plaintext" selected>Plaintext</option>
             <option value="1c">1C</option>
