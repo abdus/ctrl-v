@@ -2,13 +2,13 @@
 
 # ctrl-v
 
-<p align="center">
-  <img src="https://i.ibb.co/D9XRM84/ctrl-v.png">
-</p>
-
 ctrl-v is a service similar to [pastebin.com](https://pastebin.com). Built on
 top of [Netlify](https://netlify.com)'s Cloud Lambda Functions, it's
 ridiculously easy to deploy your own instance.
+
+<p align="center">
+  <img src="https://i.ibb.co/D9XRM84/ctrl-v.png">
+</p>
 
 This paste service is open to all, meaning anyone who can access deployed
 instance's URL, can easily create new paste. I designed it this way on-purpose
