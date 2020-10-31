@@ -2,9 +2,9 @@
 
 # ctrl-v
 
-ctrl-v is a service similar to [pastebin.com](https://pastebin.com). Built on
-top of [Netlify](https://netlify.com)'s Cloud Lambda Functions, it's
-ridiculously easy to deploy your own instance.
+> ctrl-v is a service similar to [pastebin.com](https://pastebin.com). Built on
+> top of [Netlify](https://netlify.com)'s Cloud Lambda Functions, it's
+> ridiculously easy to deploy your own instance.
 
 <p align="center">
   <img src="https://i.ibb.co/D9XRM84/ctrl-v.png">
