@@ -54,16 +54,6 @@ module.exports = (paste, paste_id) => `<!DOCTYPE html>
     />
   </head>
   <body>
-    <header>
-      <div></div>
-      <div>
-        <a href="/https://github.com/abdus/code-bin">Docs</a> &middot;
-        <a href="/new">New Paste</a>
-      </div>
-    </header>
     <main>${paste}</main>
-    <footer style="padding: 1rem; max-width: 60rem; margin: 3rem auto auto auto;text-align: center;">
-      <a href="https://github.com/abdus/code-bin" style="color: cyan;text-decoration: none">SourceCode on GitHub</a>
-    </footer>
   </body>
 </html>`;
